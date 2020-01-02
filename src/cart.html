@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="script/require.config" id="current-page" target-module="script/cart.js" defer async="true" ></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrap cf">
+            <!-- 左半部分 -->
+            <span class="f_left welcome">欢迎来到完美世界周边商城！</span>
+            <!-- 右半部分 -->
+            <!-- 购物车 -->
+            <div class="f_right header_cart_tip">
+                <a href="" class="text"><span class="icon"></span>购物车</a>
+                <!-- 鼠标移入显示购物车商品部分 -->
+                <!-- <div class="cart_list">
+                    <p class="list_null">购物车还没有商品，快去挑选商品吧！</p>
+                </div> -->
+            </div>
+            <!-- 订单部分 -->
+            <dl class="f_right">
+                <dt><a href="" class="needLogin">我的订单</a></dt>
+                <dd><a href="" class="needLogin">我的关注</a></dd>
+            </dl>
+            <!-- 登陆注册部分 -->
+            <dl class="f_right userlogin">
+                <dt><a href="login.html" class="needLogin">登陆</a><em></em></dt>
+                <dd><a href="register.html" target="">注册</a></dd>
+            </dl>
+            <dl class="f_right userhaslogin hide">
+                <dt><a>欢迎你<span></span></a></dt>
+                <dd><a href="" target="" class="exit">退出</a></dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="top_nav">
+        <div class="wrap cf">
+            <!-- 完美世界logo -->
+            <a href="" class="f_left logo logo_wm"><img src="http://static.wanmei.com/shop/images/logo_wm.png"
+                    width="120" height="41" alt="" title="完美商城"></a>
+            <!-- 商城logo -->
+            <a href="" class="f_left logo logo_shop"><img src="http://static.wanmei.com/shop/images/logo_shop.png"
+                    width="55" height="27" alt="" title="完美商城"></a>
+            <div class="f_left all_wares">
+                <p class="text"><span></span>全部商品</p>
+            </div>
+            <ul class="nav f_left">
+                <li><a href="index.html" target="">首页</a></li>
+                <li><a href="" target="">完美世界周边</a></li>
+                <li><a href="" target="">DOTA2专区</a></li>
+                <li><a href="" target="">FAQ</a></li>
+            </ul>
+            <div class="f_right header_search">
+                <form action="" method="get" class="cf">
+                    <input type="text" class="text " value="">
+                    <input type="button" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 面包屑导航 -->
+    <div class="nav_bar">
+        <div class="wrap">
+            <a href="/">首页</a>&gt;
+            <a href="">我的购物车</a>
+        </div>
+    </div>
+    <!-- 购物车主体 -->
+    <div class="wrap">
+        <!-- 购物车没商品 -->
+        <div class="cart_null">
+            <span></span>购物车空空的哦~，赶紧<a href="/">去选购</a>吧！
+        </div>
+        <!-- 购物车有商品 -->
+        <div class="cart_list">
+            <form id="cartForm" method="post" action="">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td class="state"><span class="all_checkbox">
+                                    <span class="checkbox">
+                                        <input type="checkbox"  checked  class="selectall">
+                                    </span>
+                                    <label>全选</label>
+                                </span>
+                            </td>
+                            <td class="name">商品名称</td>
+                            
+                            <td class="num">数量</td>
+                            <td class="danjia">单价</td>
+                            <td class="prices">价格</td>
+                            <td class="operation">操作</td>
+                        </tr>
+                    </thead>
+                    <tbody id="content">
+                        
+                        
+                    </tbody>
+                </table>
+                <div class="cf total_bar">
+                    <p class="f_left">
+                        <!-- <span><span class="checkbox"><label class="curr"></label></span><label>全选</label></span> -->
+                        <!-- <a href="">删除选中商品</a> -->
+                        <a href="index.html">继续购物</a>
+                        </p>
+                        <div class="f_right">
+                        <div class="f_right">
+                            <input type="button" value="去结算" class="btn btn_checkout">
+                            <p class="tip tip_checkout">请勾选需要结算的商品<s></s></p>
+                        </div>
+                        <p class="f_right">
+                            共<span id="num">0</span>件商品，　
+                            合计：<span >¥<font id="checkoutPrice">0</font></span></p>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
